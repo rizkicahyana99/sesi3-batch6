@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /*
+            rule secara umum: 
+            1. property: value;    
+                ==> value untuk semua arah
+                ==> value = atas = kanan = bawah = kiri
+            2. property: value1 value2;    ==> value1 untuk arah atas dan bawah; value2 untuk arah kanan dan kiri
+                ==> value1 = atas = bawah; 
+                    value2 = kanan = kiri
+            3. property: value1 value2 value3 value4;    ==> value1 untuk arah; value2 untuk arah kanan; value3 untuk arah bawah; value4 untuk arah kiri
+                ==> value1 = atas 
+                    value2 = kanan
+                    value3 = bawah
+                    value4 = kiri
+            4. property-arah: value; 
+                ==> property-top: value-top;
+                ==> property-right: value-right;
+                ==> property-bottom: value-bottom;
+                ==> property-left: value-left;
+            
+        */
+
+        #kotak1 {
+            background: brown;
+            color: white;
+            width: 200px;
+            height: 100px;
+            margin: 15px;
+        }
+        #kotak2 {
+            background: blue;
+            color: white;
+            width: 350px;
+            height: 50px;
+            margin: 35px 60px;
+        }
+        #kotak3 {
+            background: red;
+            color: white;
+            width: 80px;
+            height: 150px;
+            margin: 10px 30px 100px 300px;
+        }
+        #kotak4 {
+            background: violet;
+            color: white;
+            width: 85px;
+            height: 120px;
+            margin-left: 85px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            margin-top: 25px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="kotak1">Kotak 1</div>
+    <div id="kotak2">Kotak 2</div>
+    <div id="kotak3">Kotak 3</div>
+    <div id="kotak4">Kotak 4</div>
+</body>
+</html>

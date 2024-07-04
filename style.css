@@ -1,0 +1,16 @@
+body {
+    background: #f17474;
+}
+
+.artikel {
+    background: red;
+}
+
+/* 
+    ini komentarnya.. 
+    bisa multi-line
+*/
+#kotak-spesial {
+    color: white;
+    background: green;
+}

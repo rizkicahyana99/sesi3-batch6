@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flex</title>
+
+    <style>
+        html, body {
+            margin: 0 auto;
+        }
+        header {
+            background: orange;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        #sidebar {
+            background: red;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        ul li:hover {
+            background: yellow;
+            /* width: 100px; */
+            color: black;
+        }
+
+        #sidebar a, #sidebar2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-top: 6.5em;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+
+        #content {
+            flex: 3;
+        }
+
+        #sidebar2 {
+            flex: 2;
+        }
+
+        #sidebar2 {
+            background: aqua;
+         }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        .profile-wrapper img {
+            width: 70px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="profile-wrapper">
+            <img src="images/hacktiv8.png" alt="Logo Hacktiv8">
+        </div>
+        <h1>PT Indonesia Merdeka Tbk</h1>
+
+    </header>
+
+    <main>
+        <section id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#menu1">Menu 1</a></li>
+                    <li><a href="#menu2">Menu 2</a></li>
+                    <li><a href="#menu3">Menu 3</a></li>
+                    <li><a href="#menu4">Menu 4</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="content">
+            <div id="content-1">
+                <h2>Judul 1</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt modi dolores ducimus consectetur unde voluptatibus at veritatis odio perspiciatis perferendis similique eligendi odit tenetur sunt, ratione dignissimos quis et!</div>
+            <div id="content-2">
+                <h2>Judul 2</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium blanditiis provident quasi, eaque itaque a cum consectetur, deleniti ipsa laudantium libero animi, cupiditate sit. Accusamus asperiores beatae praesentium maiores?</div>
+            <div id="content-3">
+                <h2>Judul 3</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quibusdam iusto iste quae vitae, fuga odit molestias sequi eius repudiandae perspiciatis excepturi placeat ipsam veniam autem! Molestiae, eum ab. Repellendus.</div>
+            <div id="content-4">
+                <h2>Judul 4</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis harum nisi et unde dolore, perferendis aspernatur pariatur necessitatibus debitis soluta reiciendis consectetur dicta at maiores sit cum provident quam?</div>
+        </section>
+
+        <section id="sidebar2">
+            <nav>
+                <ul>
+                    <li><a href="#menu5">Menu 5</a></li>
+                    <li><a href="#menu6">Menu 6</a></li>
+                    <li><a href="#menu7">Menu 7</a></li>
+                    <li><a href="#menu8">Menu 8</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Nama Anda. All Rights Reserved.
+    </footer>
+</body>
+</html>

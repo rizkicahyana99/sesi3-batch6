@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State</title>
+
+    <style>
+        button {
+            background: blue;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ketika kursor mouse kita arahkan ke atas button */
+        button:hover {
+            background: #0a0ac9;
+            font-weight: bold;
+            transform: scale(1.001);
+        }
+
+        /* ketika tombol kita klik */
+        button:focus {
+            background: yellow;
+            color: red;
+            font-weight: bold;
+            transform: scale(1.001);
+            border: solid 2px red;
+        }
+
+        /* ketika tombol diklik dan ditahan */
+        button:active {
+            background: red;
+            color: white;
+            font-weight: bold;
+            /* transform: scale(1.001); */
+            border: solid 2px black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>State</h1>
+
+    <button>Simpan</button>
+</body>
+</html>

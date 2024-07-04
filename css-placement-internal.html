@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Placement Internal</title>
+
+    <!-- membuat internal css ==> menggunakan tag style -->
+    <style>
+        h1 {
+            color: red;
+        }
+
+        .artikel h1 {
+            color: blue;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .artikel2 p {
+            background: yellow;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS Placement Internal</h1>
+
+    <div class="artikel">
+        <h1>Judul 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nisi quia praesentium quidem voluptas dolorum doloremque quam blanditiis dicta beatae ipsa mollitia molestias ad, est nostrum sapiente laborum odit architecto.</p>
+    </div>
+
+    <div class="artikel">
+        <!-- menimpa / override css rule dari internal css -->
+        <h1 style="color: green;">Judul 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nisi quia praesentium quidem voluptas dolorum doloremque quam blanditiis dicta beatae ipsa mollitia molestias ad, est nostrum sapiente laborum odit architecto.</p>
+    </div>
+
+    <div class="artikel2">
+        <h1>Judul 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit enim vitae molestias ab cumque. Quis obcaecati inventore rerum ipsam natus necessitatibus perferendis possimus dicta, at laboriosam. Voluptates quidem dolor tempora?</p>
+    </div>
+</body>
+</html>

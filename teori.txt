@@ -1,0 +1,48 @@
+CSS ==> bahasa untuk men-styling / mempercantik / memperindah tampilan HTML
+
+Aturan: 
+- menggunakan selector untuk memilih elemen html yang ingin dimanipulasi tampilannya
+
+Selector: 
+1. Tag html tanpa simbol "<" dan ">"
+   Contoh: 
+   - <h1></h1>      ==> h1 
+   - <p></p>        ==> p
+
+2. Kombinasi tag html 
+   Contoh: 
+   <div class="artikel">
+        <h1>...</h1>
+   </div>
+   ==> .artikel > h1 
+       atau 
+       .artikel h1 
+
+3. Nama Id / Value Id   ==> simbol pagar (#)
+   Contoh: 
+   - <div id="kotak"></div>     ==> #kotak
+   - <p id="kalimat"></p>       ==> #kalimat
+
+4. Nama Class / Value Class     ==> simbol titik (.)
+   Contoh: 
+   - <h2 class="merah"></h2>    ==> .merah
+   - <p class="artikel"></p>    ==> .artikel
+
+Format Penulisan: 
+
+selector {
+    property1: value1;
+    ...
+    propertyN: valueN;
+}
+
+keterangan: 
+- selector  : elemen yang ingin diberikan style 
+- property  : sifat / karakter yang ingin diubah
+- value     : nilai yang sesuai untuk property 
+
+
+Cara menuliskan CSS di HTML: 
+1. Inline       ==> ditulis di dalam "tag HTML" langsung sebagai atribut "style"
+2. Internal     ==> ditulis di dalam "file HTML di dalam tag head"
+3. Eksternal    ==> ditulis di dalam "file berekstensi CSS" / file css terpisah  
