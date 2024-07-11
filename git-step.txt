@@ -1,0 +1,15 @@
+git init 
+
+git remote add origin https://......git 
+
+git add . 
+
+git commit -m "pesan commit"
+
+first time only
+git push -u origin master 
+atau 
+git push -u origin main 
+
+setelah itu 
+git push 
